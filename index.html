@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Binary Code Translator</title>
+<style>
+.textBoxes {
+    width: 500px;
+    height: 200px;
+}
+#translateButton {
+    width: 200px;
+    height: 100px;
+}
+</style>
+</head>
+
+<body>
+<h1><center>Binary Code Translator</center></h1>
+<hr>
+<br>
+<p>Input</p>
+<input type="text" name="inputBox"  id="inputBox"  class="textBoxes">
+<input type="button" name="translate" value="translate" id="translateButton" onclick="translateInput()">
+<p>Output</p>
+<input type="text" name="outputBox" id="outputBox" class="textBoxes">
+
+
+<script>
+
+function translateInput() {
+  /*fetch input value*/
+  var text = document.getElementById("inputBox").value;
+   
+  if(text.includes("01000001")){
+  text = text.replace('01000001','a'); 
+  } 
+  
+  /*make output value equal to input value*/
+  document.getElementById("outputBox").value = text;
+
+}
+
+</script>
+
+</body>
+</html>
