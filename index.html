@@ -26,20 +26,39 @@
 
 
 <script>
-
 function translateInput() {
   /*fetch input value*/
   var text = document.getElementById("inputBox").value;
-   
-  if(text.includes("01000001")){
-  text = text.replace('01000001','a'); 
+  /*----A----*/
+  if(text.includes("a")){
+  text = text.replace('a','00110001 '); 
   } 
+  if(text.includes("A")){
+  text = text.replace('A','00110001 '); 
+  } 
+  /*----B----*/
+  if(text.includes("b")){
+  text = text.replace('b','01000010 '); 
+  } 
+  if(text.includes("B")){
+  text = text.replace('B','01000010 '); 
+  }
+  /*----c----*/
+  if(text.includes("c")){
+  text = text.replace('c','01100011 '); 
+  } 
+  if(text.includes("C")){
+  text = text.replace('C','01100011 '); 
+  }
+  /*----D----*/
+  /*----E----*/
+  /*----F----*/
+  /*----G----*/
+  /*----H----*/
   
   /*make output value equal to input value*/
   document.getElementById("outputBox").value = text;
-
 }
-
 </script>
 
 </body>
