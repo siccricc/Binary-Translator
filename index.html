@@ -34,11 +34,11 @@ function translateInput() {
   text = text.replace('a','00110001 '); 
   } 
   if(text.includes("A")){
-  text = text.replace('A','00110001 '); 
+  text = text.replace('A','01000001 '); 
   } 
   /*----B----*/
   if(text.includes("b")){
-  text = text.replace('b','01000010 '); 
+  text = text.replace('b','01100010 '); 
   } 
   if(text.includes("B")){
   text = text.replace('B','01000010 '); 
@@ -48,12 +48,36 @@ function translateInput() {
   text = text.replace('c','01100011 '); 
   } 
   if(text.includes("C")){
-  text = text.replace('C','01100011 '); 
+  text = text.replace('C','01000011 '); 
   }
   /*----D----*/
+  if(text.includes("d")){
+  text = text.replace('d','01100011 '); 
+  } 
+  if(text.includes("D")){
+  text = text.replace('D','01000011 '); 
+  }
   /*----E----*/
+  if(text.includes("e")){
+  text = text.replace('e','01100101 '); 
+  } 
+  if(text.includes("E")){
+  text = text.replace('E','01000101 '); 
+  }    
   /*----F----*/
+  if(text.includes("f")){
+  text = text.replace('f','01100110')
+  } 
+  if(text.includes("F)){
+  text = text.replace('F','01000110')
+  }  
   /*----G----*/
+  if(text.includes("")){
+  text = text.replace('','')
+  } 
+  if(text.includes(")){
+  text = text.replace('F','')
+  }   
   /*----H----*/
   
   /*make output value equal to input value*/
