@@ -66,19 +66,32 @@ function translateInput() {
   }    
   /*----F----*/
   if(text.includes("f")){
-  text = text.replace('f','01100110')
+  text = text.replace('f','01100110 ')
   } 
   if(text.includes("F)){
-  text = text.replace('F','01000110')
+  text = text.replace('F','01000110 ')
   }  
   /*----G----*/
-  if(text.includes("")){
-  text = text.replace('','')
+  if(text.includes("g")){
+  text = text.replace('g','01100111 ')
   } 
-  if(text.includes(")){
-  text = text.replace('F','')
+  if(text.includes("G")){
+  text = text.replace('G','01000111 ')
   }   
   /*----H----*/
+  if(text.includes("h")){
+  text = text.replace('h','01101000 ')
+  } 
+  if(text.includes("H")){
+  text = text.replace('H','01001000 ')
+  } 
+  /*----I----*/  
+  if(text.includes("i")){
+  text = text.replace('i','01101001 ')
+  } 
+  if(text.includes("I")){
+  text = text.replace('I','01001001 ')
+  }
   
   /*make output value equal to input value*/
   document.getElementById("outputBox").value = text;
