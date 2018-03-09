@@ -8,7 +8,7 @@
     height: 200px;
 }
 #translateButton {
-    width: 200px;
+    width: 100px;
     height: 100px;
 }
 </style>
@@ -205,13 +205,24 @@ function translateInput() {
   text = text.replace('Y','01011001 ')
   }
   /*----Z----*/
-   if(text.includes("y")){
-  text = text.replace('y','01111010 ')
+   if(text.includes("z")){
+  text = text.replace('z','01111010 ')
   } 
-  if(text.includes("Y")){
-  text = text.replace('Y','01011010 ')
+  if(text.includes("Z")){
+  text = text.replace('Z','01011010 ')
   } 
-  
+  /*----space----*/
+  if(text.includes(" ")){
+  text = text.replace(' ','00100000 ')
+  }  
+  /*----dot----*/
+  if(text.includes(".")){
+  text = text.replace('.','00101110 ')
+  } 
+  /*----,----*/
+  if(text.includes(",")){
+  text = text.replace(',','00100111 ')
+  } 
   /*make output value equal to input value*/
   document.getElementById("outputBox").value = text;
 }
