@@ -156,18 +156,18 @@ function translateInput() {
   text = text.replace('R','01010010 ')
   }
   /*----S----*/
-  if(text.includes("j")){
-  text = text.replace('j','01111010 ')
+  if(text.includes("s")){
+  text = text.replace('s','01110011 ')
   } 
-  if(text.includes("J")){
-  text = text.replace('J','01011010 ')
+  if(text.includes("S")){
+  text = text.replace('S','01010011 ')
   }
   /*----T----*/
-  if(text.includes("j")){
-  text = text.replace('j','01110100 ')
+  if(text.includes("t")){
+  text = text.replace('t','01110100 ')
   } 
-  if(text.includes("J")){
-  text = text.replace('J','01010100 ')
+  if(text.includes("t")){
+  text = text.replace('t','01010100 ')
   }
   /*----U----*/
   if(text.includes("u")){
@@ -177,11 +177,11 @@ function translateInput() {
   text = text.replace('U','01010101 ')
   }
   /*----V----*/
-  if(text.includes("j")){
-  text = text.replace('j','01110100 ')
+  if(text.includes("v")){
+  text = text.replace('v','01110110 ')
   } 
-  if(text.includes("J")){
-  text = text.replace('J','01010100 ')
+  if(text.includes("V")){
+  text = text.replace('V','01010110 ')
   }
   /*----W----*/
   if(text.includes("w")){
@@ -247,9 +247,6 @@ function translateInput() {
   if(text.includes("\"")){
   text = text.replace('`','00101100 ')
   }
-  /*make output value equal to input value*/
-  document.getElementById("outputBox").value = text;
-}
 /*----(----*/
   if(text.includes("(")){
   text = text.replace('(','00101000 ')
@@ -257,7 +254,11 @@ function translateInput() {
 /*----)----*/
   if(text.includes(")")){
   text = text.replace(')','00101001 ')
-  }
+  }  
+/*make output value equal to input value*/
+  document.getElementById("outputBox").value = text;
+}
+
 </script>
 
 </body>
