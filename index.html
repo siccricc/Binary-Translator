@@ -223,9 +223,41 @@ function translateInput() {
   if(text.includes(",")){
   text = text.replace(',','00100111 ')
   } 
+  /*----:----*/
+  if(text.includes(":")){
+  text = text.replace(':','00110001 ')
+  }
+  /*----;----*/
+  if(text.includes(";")){
+  text = text.replace(';','00111011 ')
+  }
+  /*----?----*/
+  if(text.includes("?")){
+  text = text.replace('?','00111111 ')
+  }
+  /*----!----*/
+  if(text.includes("!")){
+  text = text.replace('!','00100001 ')
+  }
+/*----`----*/
+  if(text.includes("`")){
+  text = text.replace('`','00101100 ')
+  }
+/*----"----*/
+  if(text.includes("\"")){
+  text = text.replace('`','00101100 ')
+  }
   /*make output value equal to input value*/
   document.getElementById("outputBox").value = text;
 }
+/*----(----*/
+  if(text.includes("(")){
+  text = text.replace('(','00101000 ')
+  }
+/*----)----*/
+  if(text.includes(")")){
+  text = text.replace(')','00101001 ')
+  }
 </script>
 
 </body>
