@@ -19,8 +19,7 @@
 <hr>
 <br>
 <p>Input</p>
-<input type="text" name="inputBox"  id="inputBox"  class="textBoxes">
-<input type="button" name="translate" value="translate" id="translateButton" onclick="translateInput()">
+<input type="text" name="inputBox"  id="inputBox"  class="textBoxes" onchange:"translateInput">
 <p>Output</p>
 <input type="text" name="outputBox" id="outputBox" class="textBoxes">
 
@@ -247,9 +246,6 @@ function translateInput() {
   if(text.includes("\"")){
   text = text.replace('`','00101100 ')
   }
-  /*make output value equal to input value*/
-  document.getElementById("outputBox").value = text;
-}
 /*----(----*/
   if(text.includes("(")){
   text = text.replace('(','00101000 ')
@@ -258,6 +254,10 @@ function translateInput() {
   if(text.includes(")")){
   text = text.replace(')','00101001 ')
   }
+  /*make output value equal to input value*/
+  document.getElementById("outputBox").value = text;
+}
+
 </script>
 
 </body>
