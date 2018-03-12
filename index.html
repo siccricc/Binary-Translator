@@ -19,9 +19,9 @@
 <hr>
 <br>
 <p>Input</p>
-<input type="text" name="inputBox"  id="inputBox"  class="textBoxes" onchange:"translateInput">
+<input type="text" name="inputBox"  id="inputBox"  class="textBoxes" onchange="translateInput(this.value)" >
 <p>Output</p>
-<input type="text" name="outputBox" id="outputBox" class="textBoxes">
+<input type="text" name="outputBox" id="outputBox" class="textBoxes" >
 
 
 <script>
@@ -155,11 +155,11 @@ function translateInput() {
   text = text.replace('R','01010010 ')
   }
   /*----S----*/
-  if(text.includes("j")){
-  text = text.replace('j','01111010 ')
+  if(text.includes("s")){
+  text = text.replace('s','01010011 ')
   } 
-  if(text.includes("J")){
-  text = text.replace('J','01011010 ')
+  if(text.includes("S")){
+  text = text.replace('S','01011010 ')
   }
   /*----T----*/
   if(text.includes("j")){
@@ -254,8 +254,9 @@ function translateInput() {
   if(text.includes(")")){
   text = text.replace(')','00101001 ')
   }
-  /*make output value equal to input value*/
-  document.getElementById("outputBox").value = text;
+
+/*make output value equal to input value*/
+ document.getElementById("outputBox").value = text;
 }
 
 </script>
