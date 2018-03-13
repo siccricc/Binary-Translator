@@ -29,231 +29,232 @@
 function translateInput() {
   /*fetch input value*/
   var text = document.getElementById("inputBox").value;
+  
+  if(text.includes(" ")){
+  text = text.replace(' ','00100000 ');
+  }
   /*----A----*/
   if(text.includes("a")){
-  text = text.replace('a','00110001 '); 
+  text = text.replace(/a/g,'00110001 '); 
   } 
   if(text.includes("A")){
-  text = text.replace('A','01000001 '); 
+  text = text.replace(/A/g,'01000001 '); 
   } 
   /*----B----*/
   if(text.includes("b")){
-  text = text.replace('b','01100010 '); 
+  text = text.replace(/b/g,'01100010 '); 
   } 
   if(text.includes("B")){
-  text = text.replace('B','01000010 '); 
+  text = text.replace(/B/g,'01000010 '); 
   }
   /*----c----*/
   if(text.includes("c")){
-  text = text.replace('c','01100011 '); 
+  text = text.replace(/c/g,'01100011 '); 
   } 
   if(text.includes("C")){
-  text = text.replace('C','01000011 '); 
+  text = text.replace(/C/g,'01000011 '); 
   }
   /*----D----*/
   if(text.includes("d")){
-  text = text.replace('d','01100011 '); 
+  text = text.replace(/d/g,'01100011 '); 
   } 
   if(text.includes("D")){
-  text = text.replace('D','01000011 '); 
+  text = text.replace(/D/g,'01000011 '); 
   }
   /*----E----*/
   if(text.includes("e")){
-  text = text.replace('e','01100101 '); 
+  text = text.replace(/e/g,'01100101 '); 
   } 
   if(text.includes("E")){
-  text = text.replace('E','01000101 '); 
+  text = text.replace(/E/g,'01000101 '); 
   }    
   /*----F----*/
   if(text.includes("f")){
-  text = text.replace('f','01100110 ')
+  text = text.replace(/f/g,'01100110 ')
   } 
   if(text.includes("F")){
-  text = text.replace('F','01000110 ')
+  text = text.replace(/F/g,'01000110 ')
   }  
   /*----G----*/
   if(text.includes("g")){
-  text = text.replace('g','01100111 ')
+  text = text.replace(/g/g,'01100111 ')
   } 
   if(text.includes("G")){
-  text = text.replace('G','01000111 ')
+  text = text.replace(/G/g,'01000111 ')
   }   
   /*----H----*/
   if(text.includes("h")){
-  text = text.replace('h','01101000 ')
+  text = text.replace(/h/g,'01101000 ')
   } 
   if(text.includes("H")){
-  text = text.replace('H','01001000 ')
+  text = text.replace(/H/g,'01001000 ')
   } 
   /*----I----*/  
   if(text.includes("i")){
-  text = text.replace('i','01101001 ')
+  text = text.replace(/i/g,'01101001 ')
   } 
   if(text.includes("I")){
-  text = text.replace('I','01001001 ')
+  text = text.replace(/I/g,'01001001 ')
   } 
   /*----J----*/
   if(text.includes("j")){
-  text = text.replace('j','01101010 ')
+  text = text.replace(/j/g,'01101010 ')
   } 
   if(text.includes("J")){
-  text = text.replace('J','01001010 ')
+  text = text.replace(/J/g,'01001010 ')
   }
   /*----K----*/
   if(text.includes("k")){
-  text = text.replace('k','01101011 ')
+  text = text.replace(/k/g,'01101011 ')
   } 
   if(text.includes("K")){
-  text = text.replace('K','01001011 ')
+  text = text.replace(/K/g,'01001011 ')
   }    
   /*----L----*/
   if(text.includes("l")){
-  text = text.replace('l','01101010 ')
+  text = text.replace(/l/g,'01101010 ')
   } 
   if(text.includes("L")){
-  text = text.replace('L','01001010 ')
+  text = text.replace(/L/g,'01001010 ')
   }
   /*----M----*/
   if(text.includes("m")){
-  text = text.replace('m','01101101 ')
+  text = text.replace(/m/g,'01101101 ')
   } 
   if(text.includes("M")){
-  text = text.replace('M','01001101 ')
+  text = text.replace(/M/g,'01001101 ')
   }
   /*----N----*/
   if(text.includes("n")){
-  text = text.replace('n','01101110 ')
+  text = text.replace(/n/g,'01101110 ')
   } 
   if(text.includes("N")){
-  text = text.replace('N','01001110 ')
+  text = text.replace(/N/g,'01001110 ')
   }
   /*----O----*/
   if(text.includes("o")){
-  text = text.replace('o','01101111 ')
+  text = text.replace(/o/g,'01101111 ')
   } 
   if(text.includes("O")){
-  text = text.replace('O','01001111 ')
+  text = text.replace(/O/g,'01001111 ')
   }
   /*----P----*/
   if(text.includes("p")){
-  text = text.replace('p','01110000 ')
+  text = text.replace(/p/g,'01110000 ')
   } 
   if(text.includes("P")){
-  text = text.replace('P','01010000 ')
+  text = text.replace(/P/g,'01010000 ')
   }
   /*----Q----*/
   if(text.includes("q")){
-  text = text.replace('q','01110001 ')
+  text = text.replace(/q/g,'01110001 ')
   } 
   if(text.includes("Q")){
-  text = text.replace('Q','01010001 ')
+  text = text.replace(/Q/g,'01010001 ')
   }
   /*----R----*/
   if(text.includes("r")){
-  text = text.replace('r','01110010 ')
+  text = text.replace(/r/g,'01110010 ')
   } 
   if(text.includes("R")){
-  text = text.replace('R','01010010 ')
+  text = text.replace(/R/g,'01010010 ')
   }
   /*----S----*/
   if(text.includes("s")){
-  text = text.replace('s','01110011 ')
+  text = text.replace(/s/g,'01110011 ')
   } 
   if(text.includes("S")){
-  text = text.replace('S','01010011 ')
+  text = text.replace(/S/g,'01010011 ')
   }
   /*----T----*/
   if(text.includes("t")){
-  text = text.replace('t','01110100 ')
+  text = text.replace(/t/g,'01110100 ')
   } 
-  if(text.includes("t")){
-  text = text.replace('t','01010100 ')
+  if(text.includes("T")){
+  text = text.replace(/T/g,'01010100 ')
   }
   /*----U----*/
   if(text.includes("u")){
-  text = text.replace('u','01110101 ')
+  text = text.replace(/u/g,'01110101 ')
   } 
   if(text.includes("U")){
-  text = text.replace('U','01010101 ')
+  text = text.replace(/U/g,'01010101 ')
   }
   /*----V----*/
   if(text.includes("v")){
-  text = text.replace('v','01110110 ')
+  text = text.replace(/v/g,'01110110 ')
   } 
   if(text.includes("V")){
-  text = text.replace('V','01010110 ')
+  text = text.replace(/V/g,'01010110 ')
   }
   /*----W----*/
   if(text.includes("w")){
-  text = text.replace('w','01110111 ')
+  text = text.replace(/w/g,'01110111 ')
   } 
   if(text.includes("W")){
-  text = text.replace('W','01010111 ')
+  text = text.replace(/W/g,'01010111 ')
   }
   /*----X----*/
   if(text.includes("w")){
-  text = text.replace('w','01111000 ')
+  text = text.replace(/w/g,'01111000 ')
   } 
   if(text.includes("W")){
-  text = text.replace('W','01011000 ')
+  text = text.replace(/W/g,'01011000 ')
   }
   /*----Y----*/
   if(text.includes("y")){
-  text = text.replace('y','01111001 ')
+  text = text.replace(/y/g,'01111001 ')
   } 
   if(text.includes("Y")){
-  text = text.replace('Y','01011001 ')
+  text = text.replace(/Y/g,'01011001 ')
   }
   /*----Z----*/
    if(text.includes("z")){
-  text = text.replace('z','01111010 ')
+  text = text.replace(/z/g,'01111010 ')
   } 
   if(text.includes("Z")){
-  text = text.replace('Z','01011010 ')
+  text = text.replace(/Z/g,'01011010 ')
   } 
-  /*----space----*/
-  if(text.includes(" ")){
-  text = text.replace(' ','00100000 ')
-  }  
+
   /*----dot----*/
   if(text.includes(".")){
-  text = text.replace('.','00101110 ')
+  text = text.replace(/./g,'00101110 ')
   } 
   /*----,----*/
   if(text.includes(",")){
-  text = text.replace(',','00100111 ')
+  text = text.replace(/,/g,'00100111 ')
   } 
   /*----:----*/
   if(text.includes(":")){
-  text = text.replace(':','00110001 ')
+  text = text.replace(/:/g,'00110001 ')
   }
   /*----;----*/
   if(text.includes(";")){
-  text = text.replace(';','00111011 ')
+  text = text.replace(/;/g,'00111011 ')
   }
   /*----?----*/
   if(text.includes("?")){
-  text = text.replace('?','00111111 ')
+  text = text.replace(/?/g,'00111111 ')
   }
   /*----!----*/
   if(text.includes("!")){
-  text = text.replace('!','00100001 ')
+  text = text.replace(/!/g,'00100001 ')
   }
 /*----`----*/
   if(text.includes("`")){
-  text = text.replace('`','00101100 ')
+  text = text.replace(/`/g,'00101100 ')
   }
 /*----"----*/
   if(text.includes("\"")){
-  text = text.replace('`','00101100 ')
+  text = text.replace(/"/g,'00101100 ')
   }
 /*----(----*/
   if(text.includes("(")){
-  text = text.replace('(','00101000 ')
+  text = text.replace(/(/g,'00101000 ')
   }
 /*----)----*/
   if(text.includes(")")){
-  text = text.replace(')','00101001 ')
+  text = text.replace(/)/g,'00101001 ')
   }  
 /*make output value equal to input value*/
   document.getElementById("outputBox").value = text;
